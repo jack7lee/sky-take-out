@@ -45,6 +45,7 @@ public class EmployeeController {
     @ApiOperation("员工登录接口")
     public Result<EmployeeLoginVO> login(@RequestBody EmployeeLoginDTO employeeLoginDTO) {
         log.info("员工登录：{}", employeeLoginDTO);
+        System.out.println("当前线程id：" + Thread.currentThread().getId());
 
         Employee employee = employeeService.login(employeeLoginDTO);
 
