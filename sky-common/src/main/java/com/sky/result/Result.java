@@ -1,5 +1,6 @@
 package com.sky.result;
 
+import com.sky.constant.ResponseCode;
 import lombok.Data;
 
 import java.io.Serializable;
